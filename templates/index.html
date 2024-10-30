@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 600px; margin: 0 auto; padding: 1em; }
+        .form-group { margin-bottom: 1em; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Path Prediction</h1>
+        <form action="/" method="POST">
+            <!-- Academic Scores -->
+            <h3>Maths Scores (0-100)</h3>
+            <div class="form-group">
+                <label>Algebra:</label>
+                <input type="number" name="algebra" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Geometry:</label>
+                <input type="number" name="geometry" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Calculus:</label>
+                <input type="number" name="calculus" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Statistics:</label>
+                <input type="number" name="statistics" min="0" max="100" required><br>
+            </div>
+
+            <h3>Science Scores (0-100)</h3>
+            <div class="form-group">
+                <label>Physics:</label>
+                <input type="number" name="physics" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Chemistry:</label>
+                <input type="number" name="chemistry" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Biology:</label>
+                <input type="number" name="biology" min="0" max="100" required><br>
+            </div>
+
+            <!-- Language Scores -->
+            <h3>Language Scores (0-100)</h3>
+            <div class="form-group">
+                <label>English:</label>
+                <input type="number" name="english" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>French:</label>
+                <input type="number" name="french" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Spanish:</label>
+                <input type="number" name="spanish" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>German:</label>
+                <input type="number" name="german" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Chinese:</label>
+                <input type="number" name="chinese" min="0" max="100" required><br>
+            </div>
+
+            <!-- Art Scores -->
+            <h3>Art Scores (0-100)</h3>
+            <div class="form-group">
+                <label>Painting:</label>
+                <input type="number" name="painting" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Sculpture:</label>
+                <input type="number" name="sculpture" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Music:</label>
+                <input type="number" name="music" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Theater:</label>
+                <input type="number" name="theater" min="0" max="100" required><br>
+            </div>
+            <div class="form-group">
+                <label>Photography:</label>
+                <input type="number" name="photography" min="0" max="100" required><br>
+            </div>
+
+            <!-- Additional Fields -->
+            <h3>Additional Information</h3>
+            <!-- Sports Participation -->
+            <div class="form-group">
+                <label>Sports Participation:</label>
+                <select name="sports_participation" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select><br>
+            </div>
+            <!-- Level of Sports Achievement -->
+            <div class="form-group">
+                <label>Sports Achievement Level:</label>
+                <select name="sports_achievement_level" required>
+                    <option value="None">None</option>
+                    <option value="Local">Local</option>
+                    <option value="Regional">Regional</option>
+                    <option value="National">National</option>
+                    <option value="International">International</option>
+                </select><br>
+            </div>
+            <!-- Extracurricular Activities -->
+            <div class="form-group">
+                <label>Extracurricular Activities:</label>
+                <input type="text" name="extracurricular_activities" placeholder="e.g., Debate Club, Science Club"><br>
+            </div>
+            <!-- Leadership Roles -->
+            <div class="form-group">
+                <label>Leadership Roles:</label>
+                <input type="text" name="leadership_roles" placeholder="e.g., Class Representative, Club President"><br>
+            </div>
+            <!-- STEM Pathway -->
+            <div class="form-group">
+                <label>STEM Pathway:</label>
+                <select name="stem_pathway" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br>
+            </div>
+
+            <button type="submit">Predict Career Path</button>
+        </form>
+    </div>
+</body>
+</html>
